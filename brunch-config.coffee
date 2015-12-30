@@ -17,4 +17,4 @@ module.exports = config:
         }
       ]
     babel:
-      presets: ['es2015']
+      presets: ['es2015', 'react']

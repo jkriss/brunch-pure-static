@@ -15,9 +15,9 @@
   "_s3BucketName": "example-brunch-static-site",
   "description": "A brunch skeleton with prerendered static templates and pure.css",
   "author": "Jesse Kriss <jesse@jklabs.net",
-  "license": "MIT",
   "devDependencies": {
     "babel-brunch": "^6.0.0",
+    "babel-preset-react": "^6.3.13",
     "brunch": "^2.0.4",
     "brunch-static": "^1.0.0",
     "brunch-static-tools": "github:jkriss/brunch-static-tools",
