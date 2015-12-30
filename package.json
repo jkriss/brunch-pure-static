@@ -7,6 +7,10 @@
     "pure",
     "pure.css"
   ],
+  "scripts": {
+    "deploy": "brunch build --production && static-tools-upload"
+  },
+  "_s3BucketName": "example-brunch-static-site",
   "description": "A brunch skeleton with prerendered static templates and pure.css",
   "author": "Jesse Kriss <jesse@jklabs.net",
   "license": "MIT",
@@ -14,11 +18,13 @@
     "babel-brunch": "^6.0.0",
     "brunch": "^2.0.4",
     "brunch-static": "^1.0.0",
+    "brunch-static-tools": "github:jkriss/brunch-static-tools",
     "compression": "^1.6.0",
     "express": "^4.13.3",
+    "file-type": "^3.3.1",
     "html-brunch-static": "^1.1.1",
     "javascript-brunch": "^1.8.0",
-    "openport": "0.0.4",
+    "read-chunk": "^1.0.1",
     "sass-brunch": "^1.9.2",
     "serve-static": "^1.10.0"
   }
