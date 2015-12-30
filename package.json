@@ -1,0 +1,21 @@
+{
+  "name": "brunch-pure-static",
+  "version": "1.0.0",
+  "keywords": [
+    "brunch",
+    "static",
+    "pure",
+    "pure.css"
+  ],
+  "description": "A brunch skeleton with prerendered static templates and pure.css",
+  "author": "Jesse Kriss <jesse@jklabs.net",
+  "license": "MIT",
+  "devDependencies": {
+    "babel-brunch": "^6.0.0",
+    "brunch": "^2.0.4",
+    "brunch-static": "^1.0.0",
+    "html-brunch-static": "^1.1.1",
+    "javascript-brunch": "^1.8.0",
+    "sass-brunch": "^1.9.2"
+  }
+}
