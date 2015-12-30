@@ -1,4 +1,6 @@
 module.exports = config:
+  server:
+    path: 'node_modules/brunch-static-tools/brunch-server'
   files:
     javascripts: joinTo: 'app.js'
     stylesheets: joinTo:
