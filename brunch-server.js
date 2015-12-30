@@ -2,8 +2,8 @@ var express = require('express')
 var compression = require('compression')
 var serveStatic = require('serve-static')
 var Path = require('path');
-var readChunk = require('read-chunk');
-var GzipMagic = new Buffer([0x1f, 0x8b]); // gzip files start with this
+var fs = require('fs');
+var isGzip = require('is-gzip-file');
 var app = express();
 
 module.exports = function(port, path, callback) {
@@ -24,9 +24,9 @@ module.exports = function(port, path, callback) {
       res.setHeader('Etag', '"'+hash+'"');
       res.setHeader('Cache-Control', 'public, max-age=2592000'); // 1 month
     }
-    // if it's already a gzip file (based on magic number) then say so
-    var magicNumber = readChunk.sync(path, 0, 2);
-    if (magicNumber.equals(GzipMagic)) {
+    // if it's already a gzip file then say so
+    console.log("is", path, "gzipped?", isGzip(path))
+    if (isGzip(path)) {
       res.setHeader('Content-Encoding', 'gzip')
     }
   }
