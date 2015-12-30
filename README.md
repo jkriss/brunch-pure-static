@@ -51,4 +51,5 @@ the following line in `package.json` to match your S3 bucket name:
 `"_s3BucketName" : "example-brunch-static-site",`
 
 Once you've done this, you can run `npm run deploy` to build for production and
-upload to S3 in one shot.
+upload to S3 in one shot. The Content-Type and Content-Encoding headers will be
+set appropriately.
