@@ -1,3 +1,8 @@
 ---
-entry: app/react-main.js
+bindings:
+  '#app' : './app'
 ---
+
+<p>This is a page with React stuff in it.</p>
+
+<div id="app">app stuff goes here</div>

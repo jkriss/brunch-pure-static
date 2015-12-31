@@ -4,7 +4,7 @@ module.exports = React.createClass({
   },
   render : function() {
     return <div>
-      <p>I'm the main content</p>
+      <p>I'm the main content. Neat!</p>
       <button onClick={this.handleClick}>Click me, I'm awesome</button>
     </div>
   }
