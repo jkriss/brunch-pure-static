@@ -8,6 +8,9 @@ module.exports = config:
   plugins:
     static:
       processors: [
+        require('react-brunch-static') {
+          layout: 'app/layouts/main.static.hbs'
+        }
         require('html-brunch-static') {
           handlebars:
             enableProcessor: true
